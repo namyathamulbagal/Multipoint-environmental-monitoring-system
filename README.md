@@ -31,9 +31,9 @@ Junction → SHT4x Sensor → ESP32 → Wi-Fi (HTTP POST) → Flask Server → C
 ## System Architecture
 
 ```
-┌─────────────┐     I2C      ┌────────┐   HTTP POST   ┌──────────────┐
-│  SHT4x (x5) │ ──────────▶ │ ESP32  │ ────────────▶ │ Flask Server │
-│  Temp + RH  │             │ (x4)   │   Wi-Fi LAN   │  (Laptop)    │
+┌─────────────┐     I2C     ┌────────┐   HTTP POST   ┌──────────────┐
+│  SHT4x (x5) │ ──────────▶ │ ESP32 │ ────────────▶ │ Flask Server │
+│  Temp + RH  │             │ (x5)   │   Wi-Fi LAN   │  (Laptop)    │
 └─────────────┘             └────────┘               └──────┬───────┘
                                                             │
                                               ┌─────────────┴──────────┐
