@@ -8,7 +8,7 @@ Developed during R&D internship at **InnAccel Technologies Pvt Ltd, Bengaluru** 
 
 ## Overview
 
-During bench testing of humidifier and breathing circuit combinations for neonatal respiratory devices, it was critical to monitor temperature and humidity simultaneously across multiple junctions in real time. This system deploys multiple ESP32 nodes — each paired with an SHT4x sensor — at key circuit junctions. All nodes transmit data over Wi-Fi to a centralized Flask server, which logs readings to CSV and displays a live status dashboard.
+During bench testing of humidifier and breathing circuit combinations for neonatal respiratory devices, it was critical to monitor temperature and humidity simultaneously across multiple junctions in real time. This system deploys multiple ESP32 nodes,each paired with an SHT4x sensor — at key circuit junctions. All nodes transmit data over Wi-Fi to a centralized Flask server, which logs readings to CSV and displays a live status dashboard.
 
 ```
 Junction → SHT4x Sensor → ESP32 → Wi-Fi (HTTP POST) → Flask Server → CSV Log + Dashboard
